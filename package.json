@@ -1,0 +1,22 @@
+{
+  "name": "commai",
+  "version": "1.0.0",
+  "description": "Coding Challenge",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "npm run test"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "leaflet": "^1.4.0",
+    "mongoose": "*"
+  },
+  "author": "Sammy Al Hashemi",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.14.1"
+  }
+}
