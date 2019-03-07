@@ -2,6 +2,7 @@
 
 The deployed site is [here](https://dashcamroutes.herokuapp.com/)
 
+
 This app, if I interpreted the instructions correctly (see instructions), simultaneously shows all trips recorded on an interactive map and the distribution of their speeds. This distribution is presented by using different colors, for which a legend can be found in a sidenav.
 
 Each trip is a ``json`` file with a start and end time. The ``json`` file also contains a ``coords`` array, which contains data points sampled every second during the trip. Each data point contains the coordinates and the speed at the time of sampling.
@@ -30,3 +31,5 @@ The project was deployed on Heroku.
 - My method of splitting the data is very rudimentary, and it shows, being rough around the edges at times on the map.
 - Only added points to the map that were within the bounds of the map on the page. Seems like `leaflet` does a good job of caching these points anyways though.
 - e2e testing
+
+Data and other scripts made can be found [here](https://github.com/Sammyalhashe/comma.ai-codingchallenge)
