@@ -1,0 +1,17 @@
+<mat-sidenav-container>
+    <!--<p *ngFor="let trips of this.allTrips.trips">-->
+    <!--<span *ngFor="let coord of trips.coords">-->
+    <!--{{coord.coordinates}}-->
+    <!--</span>-->
+    <!--</p>-->
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+        <mat-list class="list" role="list">
+            <mat-list-item class="listitem" role="listitem" *ngFor="let i of this.speeds" [innerHTML]="this.speedMapping[i]" [style.background-color]="this.colorMapping[i]"></mat-list-item>
+        </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div id="mapHolder" leaflet [leafletOptions]="options" [leafletLayers]="layers" [(leafletZoom)]="zoom" (leafletMapZoom)="zoomTracker()" (leafletMapZoomStart)="zoomStart()" (leafletMapZoomEnd)="zoomEnd()" (leafletMapReady)="onMapReady($event)">
+        </div>
+        <button (click)="this.toggleSidenav()" mat-stroked-button class="toggleButton">Toggle Legend</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>

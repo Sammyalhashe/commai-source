@@ -1,0 +1,8 @@
+<div class="container">
+    <app-navbar></app-navbar>
+    <router-outlet id="routeHolder"></router-outlet>
+    <!-- navbar that only is on when data is being downloaded -->
+    <div *ngIf="loading" id="loaderHolder">
+        <mat-spinner id="loader"></mat-spinner>
+    </div>
+</div>

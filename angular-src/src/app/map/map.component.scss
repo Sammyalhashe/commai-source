@@ -1,0 +1,20 @@
+#mapHolder {
+    border: black solid 5px;
+    margin: 15px auto;
+    height: 640px;
+    width: 70%;
+    padding: 0;
+}
+
+.list {
+    .listitem {
+        padding-top: 13px;
+        padding-right: 10px;
+        text-align: center;
+    }
+}
+
+.toggleButton {
+    display: block;
+    margin: 0 auto;
+}
